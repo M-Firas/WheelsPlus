@@ -1,0 +1,106 @@
+
+
+
+.introduction--container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-direction: row;
+    padding:   20px;    
+    height: 75vh;
+    background-image: url(../../images/layered-waves-haikei\ \(5\).svg);  
+    background-repeat: no-repeat;
+    background-position: right;
+}  
+
+@media only screen and (max-width: 600px) {
+    .introduction--container {
+      flex-direction: column;  
+      padding: 50px 20px; 
+      background: none;
+    }
+  }
+  @media only screen and (max-width: 992px) and (min-width:600px) {
+    .introduction--container {
+      padding: 50px 20px;  
+      background: none;
+    }
+  }
+  
+
+
+.introduction--text p{
+    color: var(--color2); 
+    margin: 0; 
+    font-size: 50px; 
+    letter-spacing: 1px;
+} 
+@media only screen and (max-width: 600px) {
+    .introduction--text p {
+      text-align: center; 
+    }
+  }
+
+.introduction--text span{
+    color: var(--color);
+}
+
+.introduction--image img{
+    width: 400px;
+    height: 200px; 
+    padding-left: 230px;
+} 
+@media only screen and (max-width: 600px) {
+    .introduction--image img {
+      padding: 0; 
+      margin-top: 30px;
+      width: 300px;
+      height: 190px;
+    }
+  }
+  @media only screen and (max-width: 992px) and (min-width:600px){
+    .introduction--image img{
+     padding: 0; 
+    }
+  }
+  @media only screen and (max-width: 992px) and (min-width:600px){
+    .introduction--information{
+     padding: 20px;  
+     text-align: center;
+    }
+  }
+
+.introduction--button{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: center;
+    margin-top: 20px;
+} 
+
+.introduction--button button{
+    height: 60px; 
+    width: 150px; 
+    background-color: var(--color); 
+    color: var(--color2);
+    border: none; 
+    border-radius: 30px;
+    margin-right: 20px; 
+} 
+.introduction--button button:hover{
+    cursor: pointer; 
+    opacity: 0.8;
+} 
+.introduction--reviews{
+  display: flex;
+  margin-bottom: 12px;
+  flex-direction: column;
+}
+.introduction--reviews span{
+  margin-top: -15px; 
+  color: var(--color);
+} 
+
+.introduction--reviews p{
+    color: var(--color2);
+}

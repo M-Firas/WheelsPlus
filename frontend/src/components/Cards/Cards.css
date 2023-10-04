@@ -1,0 +1,52 @@
+.card--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    background-image: url(../../images/CardImage.svg);   
+    padding: 50px 20px;
+    width: 320px;
+    height: 483px;  
+    border-radius: 20px; 
+    margin:  0px 20px;
+} 
+@media only screen and (max-width: 600px){
+    .card--container{
+        margin-bottom: 50px;
+        margin:  0px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .card--container{
+        margin-bottom: 50px;
+    }
+}
+
+.card--container h1{
+    font-size: 50px; 
+    color:var(--color2);
+} 
+.card--container span{
+    font-size: 15px;
+}
+.type{
+    font-size: 30px; 
+    margin-top:-130px; 
+    color: var(--color2);
+} 
+.plan--features{
+    font-size: 20px; 
+    color: var(--color2);
+} 
+button{
+    height: 50px;
+    width: 130px;
+    background-color: #001220;
+    color: var(--color2);
+    border: none;
+    border-radius: 30px;
+} 
+button:hover{
+    cursor: pointer; 
+    opacity: 0.8;
+}

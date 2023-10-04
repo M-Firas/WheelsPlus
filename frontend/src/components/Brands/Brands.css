@@ -1,0 +1,26 @@
+.brands--title{
+    padding: 0 20px 40px 20px;
+}
+.brands--title h2{
+  text-align: center; 
+  font-weight: 500;  
+  font-size: 30px; 
+  padding: 10px 0;
+  letter-spacing: 0.5px;
+  color: var(--color2);
+} 
+
+.card{ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    color: var(--color2); 
+    margin:0 20px; 
+    letter-spacing: 1px;
+    height: 100px; 
+    font-size: 30px;
+} 
+.card img{
+    margin-right: 5px;
+}

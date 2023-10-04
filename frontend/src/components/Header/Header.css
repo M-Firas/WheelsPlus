@@ -1,0 +1,140 @@
+.header--container{
+    padding: 0 30px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;   
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: row; 
+    color: var(--color2);  
+    max-width: 1200px;
+    width: 100%;
+} 
+
+.header--name{
+    font-size: 30px; 
+    font-weight: 300;
+}
+@media only screen and (max-width: 600px) {
+    .header--name {
+      font-size: 20px;
+    }
+  }
+
+.header--selections ul{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    
+}
+
+.header--selections li{
+    margin: 0 40px 0 0;
+    list-style-type: none;
+} 
+.header--selections li a {
+    text-decoration: none; 
+    color: var(--color2);
+}
+.header--selections li a:hover{
+   color: var(--color); 
+   cursor: pointer;
+} 
+
+.header--contact button{
+    height: 60px; 
+    width: 150px; 
+    background-color: transparent; 
+    color: var(--color2);
+    border: 1px solid var(--color2); 
+    border-radius: 30px;
+    transition: .2s ease-in-out 0s;
+}
+.header--contact button a{
+    text-decoration: none;
+    color: var(--color2);
+}
+.header--contact button:hover{
+    color: var(--color); 
+    cursor: pointer; 
+    border: none;
+      transform: scale(1);
+      background: var(--color);
+      color: var(--color2);
+} 
+.menu--container{
+
+}
+@media only screen and (min-width: 1000px) {
+    .menu--container{
+         display: none;
+    }
+  }
+.toggle--btn{
+    color: var(--color2);
+    font-size: 1.5rem;
+    cursor: pointer; 
+    display: none;
+} 
+.dropDown--menu{
+    position: absolute; 
+    display: none;
+    right: 2rem;
+    top: 70px;
+    width: 300px; 
+    height: 0;
+    background-color: gray;
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition:height 0.3s ease-in-out;
+} 
+.dropDown--menu.open{
+    height: 210px; 
+    
+}
+.dropDown--menu li{
+    padding: 0.7rem; 
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropDown--menu li a{
+    text-decoration: none; 
+    color: var(--color2);
+}
+.dropDown--menu li a:hover{
+    color: var(--color); 
+    cursor: pointer;
+ } 
+.dropDown--menu button{
+    background-color: transparent; 
+    color: var(--color2);
+    border: 1px solid var(--color2); 
+    border-radius: 30px;
+    transition: .2s ease-in-out 0s; 
+    align-self: center;
+}
+.dropDown--menu button:hover{
+    color: var(--color); 
+    cursor: pointer; 
+    border: none;
+      transform: scale(1);
+      background: var(--color);
+      color: var(--color2);
+}
+@media (max-width: 992px) {
+    .header--selections,
+    .header--contact button{
+        display: none;
+    } 
+    .toggle--btn{
+        display: block;
+    } 
+    .dropDown--menu{
+        display: block;
+    }
+}
